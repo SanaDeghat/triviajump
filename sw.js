@@ -5,12 +5,11 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('my-cache').then(function(cache) {
       return cache.addAll([
-        '/',
-        'index.html',
-        'style.css',
-        'js2.js',
-        'icons/icon512_maskable.png',
-        'icons/icon512_rounded.png'
+        '/triviajump/',
+        '/triviajump/index.html',
+        '/triviajump/style.css',
+        '/triviajump/js2.js'
+        
       ]);
     })
   );
